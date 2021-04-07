@@ -1,0 +1,46 @@
+* {
+    margin: none;
+    padding: none;
+}
+
+.lang-menu {
+    top: 30px;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.link-bar {
+    margin-right: 3px;
+}
+
+.icons-bar {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-spacer {
+    flex: 1 1 auto;
+}
+
+.teste {
+    margin: 0 auto;
+}
+
+.text-logo {
+    font-size: 14pt;
+}
+
+@media(max-width:653px) {
+    .text-logo {
+        font-size: 9pt;
+    }
+    .navbar-logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}

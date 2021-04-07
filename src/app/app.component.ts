@@ -1,3 +1,4 @@
+import { ZMenuBootstrapItems } from './../../projects/zmaterial/src/lib/z-menu/interfaces/z-menu-bootstrap-itens';
 import { Component } from '@angular/core';
 import { ZMenuProfile, ZModalService, ZMenuItems } from 'zmaterial';
 
@@ -23,6 +24,23 @@ export class AppComponent {
         { label: 'Curso', link: 'register/course' }
       ]
     }
+  ];
+
+  public currentBootstrapMenus: ZMenuBootstrapItems[] = [
+    {
+      category: 'Cadastro',
+      icon: 'fa-user-plus',
+      itens: [
+        {label:'User',link:'register/user'},
+      ]
+    },
+    {
+      category: 'Curso',
+      icon: 'fa-graduation-cap',
+      itens: [
+        {label:'User',link:'register/course'},
+      ]
+    },
   ];
 
   constructor(private zModal: ZModalService) {
