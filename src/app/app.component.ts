@@ -46,7 +46,7 @@ export class AppComponent {
       category: 'Curso',
       icon: 'fa-graduation-cap',
       itens: [
-        {label:'User',link:'register/course'},
+        {label:'Course',link:'register/course'},
       ]
     },
   ];
