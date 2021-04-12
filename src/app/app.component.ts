@@ -1,6 +1,5 @@
-import { ZMenuBootstrapItems } from './../../projects/zmaterial/src/lib/z-menu/interfaces/z-menu-bootstrap-itens';
 import { Component } from '@angular/core';
-import { ZMenuProfile, ZModalService, ZMenuItems } from 'zmaterial';
+import { ZMenuProfile, ZModalService, ZMenuItems,ZMenuBootstrapItens, ZMenuProfileBootstrap} from 'zmaterial';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +14,15 @@ export class AppComponent {
     ]
   };
 
+  public currentProfileBootstrap: ZMenuProfileBootstrap = {  
+    img:'https://instagram.fsod8-1.fna.fbcdn.net/v/t51.2885-19/s150x150/155286890_286674549544222_4007179158159824399_n.jpg?tp=1&_nc_ht=instagram.fsod8-1.fna.fbcdn.net&_nc_ohc=IOeJO6hdY8oAX8eMrXt&edm=ABfd0MgAAAAA&ccb=7-4&oh=6e87b0b6245ef13675f09bc7f8273c96&oe=609B0898&_nc_sid=7bff83',
+    descriptions: [
+        {icon: 'fa-envelope', text: 'Lucas.zaia30@gmail.com'},
+        {icon: 'fa-phone', text: 'Lucas.zaia30@gmail.com'},
+      ]
+    };
+
+
   public currentMenus: ZMenuItems[] = [
     {
       category: 'Cadastro',
@@ -26,7 +34,7 @@ export class AppComponent {
     }
   ];
 
-  public currentBootstrapMenus: ZMenuBootstrapItems[] = [
+  public currentBootstrapMenus: ZMenuBootstrapItens[] = [
     {
       category: 'Cadastro',
       icon: 'fa-user-plus',

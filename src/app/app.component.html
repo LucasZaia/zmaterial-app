@@ -2,6 +2,6 @@
     <router-outlet></router-outlet>
 </z-menu-material> -->
 
-<z-menu-bootstrap [titleProject]="'Moodle'" [itemsMenu]="currentBootstrapMenus" [Showlogout]="true" (logout)="logout($event)" [logoProject]="'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Instituto_Federal_de_S%C3%A3o_Paulo_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_de_S%C3%A3o_Paulo_-_Marca_Vertical_2015.svg.png'">
+<z-menu-bootstrap [titleProject]="'Moodle'" [itemsMenu]="currentBootstrapMenus" [profile]="currentProfileBootstrap" [showLogout]="true" (logout)="logout($event)" [logoProject]="'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Instituto_Federal_de_S%C3%A3o_Paulo_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_de_S%C3%A3o_Paulo_-_Marca_Vertical_2015.svg.png'">
     <router-outlet></router-outlet>
 </z-menu-bootstrap>

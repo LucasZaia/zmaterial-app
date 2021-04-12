@@ -34,6 +34,18 @@
     font-size: 14pt;
 }
 
+.img-profile {
+    border-radius: 100%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.custome-logout {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
 @media(max-width:653px) {
     .text-logo {
         font-size: 9pt;
@@ -42,5 +54,63 @@
         width: 30px;
         height: 30px;
         margin-right: 10px;
+    }
+}
+
+.offcanvas-icon {
+    top: 10px;
+    left: 90%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    text-align: start;
+    float: right;
+    cursor: pointer;
+}
+
+.offcanvas-collapse {
+    text-align: center;
+    left: 80%;
+    height: 100vh;
+    font-family: "Helvetica Neue";
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 20%;
+    transition: all 0.4s ease;
+    position: fixed;
+}
+
+.offcanvas-collapse.collapsing {
+    text-align: center;
+    height: auto !important;
+    margin-left: 10%;
+    right: 10%;
+    transition: all 0.2s ease;
+}
+
+.offcanvas-collapse.show {
+    right: 100%;
+}
+
+@media(max-width: 1024px) {
+    .offcanvas-collapse {
+        position: fixed;
+        text-align: center;
+        height: 100vh;
+        left: 26%;
+        font-size: 14pt;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 75%;
+        transition: all 0.2s ease;
+    }
+    .offcanvas-collapse.collapsing {
+        text-align: center;
+        height: auto !important;
+        margin-left: 40%;
+        right: 40%;
+        transition: all 0.2s ease;
     }
 }

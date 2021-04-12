@@ -14,15 +14,27 @@
         </ul>
     </div>
     <div class="row">
-        <div class="dropleft active mx-auto">
-            <a class="nav-link icons-bar" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-globe " aria-hidden="true"></i>
+        <div class="dropleft active">
+            <a class="nav-link icons-bar" href="#">
+                <i class="fa fa-globe " aria-hidden="true" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                <div class="dropdown-menu lang-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Portuguese</a>
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
             </a>
-            <div class="dropdown-menu lang-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Portuguese</a>
-                <a class="dropdown-item" href="#">English</a>
-            </div>
+
         </div>
-        <a class="nav-link icons-bar" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        <div class="mx-auto" *ngIf="showLogout">
+            <img class="img-profile" [src]="profile.img ? profile.img: 'assets/no-profile.jpeg'" width="30px" height="30px" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+        <!-- <a class="nav-link icons-bar" href="#" *ngIf="showLogout" (click)="logout.next(true)"><i class="fa fa-sign-out" aria-hidden="true"></i></a> -->
     </div>
 </nav>
+<div class="card collapse navbar-collapse offcanvas-collapse float-right col-12" id="navbarTogglerDemo02">
+    <img class="mx-auto" [src]="profile.img ? profile.img: 'assets/no-profile.jpeg'" width="80px" height="80px" style="border-radius: 100%;">
+    <span class="offcanvas-icon"><i class="fa fa-times" aria-hidden="true " data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"></i></span>
+    <div class="card-body">
+        <h5 class="card-title" *ngFor="let desc of profile.descriptions"><i class="fa {{desc.icon}}" aria-hidden="true"></i> {{desc.text}}</h5>
+        <h3 class="card-title custome-logout"><i class="fa fa-sign-out" aria-hidden="true" (click)="logout.next(true)"> Sair</i></h3>
+    </div>
+</div>

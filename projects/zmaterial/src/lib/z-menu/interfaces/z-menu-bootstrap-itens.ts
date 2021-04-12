@@ -1,4 +1,4 @@
-export interface ZMenuBootstrapItems {
+export interface ZMenuBootstrapItens {
     category: string;
     icon: string;
     itens: {

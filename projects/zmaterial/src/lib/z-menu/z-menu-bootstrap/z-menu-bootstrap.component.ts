@@ -3,7 +3,8 @@ import { ActivationStart, Router } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { Component, OnInit, Input, Output } from '@angular/core';
-import {ZMenuBootstrapItems} from '../interfaces/z-menu-bootstrap-itens';
+import {ZMenuBootstrapItens} from '../interfaces/z-menu-bootstrap-itens';
+import {ZMenuProfileBootstrap} from '../interfaces/z-menu-itens-bootstrap-profile';
 
 @Component({
     selector: 'z-menu-bootstrap',
@@ -15,9 +16,11 @@ export class ZMenuBootstrapComponent implements OnInit {
 
     @Input() titleProject: string;
 
-    @Input() itemsMenu: ZMenuBootstrapItems[];
+    @Input() itemsMenu: ZMenuBootstrapItens[];
 
-    @Input() Showlogout: boolean;
+    @Input() showLogout: boolean;
+
+    @Input() profile: ZMenuProfileBootstrap;
 
     @Input() logoProject: string;
 
