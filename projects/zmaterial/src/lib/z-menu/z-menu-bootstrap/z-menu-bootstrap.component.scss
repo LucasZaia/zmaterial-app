@@ -77,15 +77,15 @@
     padding-right: 15px;
     padding-bottom: 15px;
     width: 20%;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     position: fixed;
 }
 
 .offcanvas-collapse.collapsing {
     text-align: center;
     height: auto !important;
-    margin-left: 10%;
-    right: 10%;
+    margin-left: 100%;
+    right: 100%;
     transition: all 0.2s ease;
 }
 
@@ -109,8 +109,8 @@
     .offcanvas-collapse.collapsing {
         text-align: center;
         height: auto !important;
-        margin-left: 40%;
-        right: 40%;
+        margin-left: 100%;
+        right: 100%;
         transition: all 0.2s ease;
     }
 }
